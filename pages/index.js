@@ -8,14 +8,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex flex-row items-center px-5 justify-between bg-gradient-to-b from-transparent to-white dark:to-darklight">
+      <header className="flex flex-row items-center px-5 justify-between bg-gradient-to-b from-transparent to-white dark:to-darklighter">
         <div className="flex-1">
           <span className="text-lg font-medium">passivbot</span>
         </div>
         <nav className="flex-1 flex justify-center space-x-2">
           <a className="py-3 px-2 border-b-2 border-primary" href="#">Bots</a>
-          <a className="py-3 px-2" href="#">API</a>
-          <a className="py-3 px-2" href="#">Wiki</a>
+          <a className="py-3 px-2 text-gray-500 hover:text-white" href="#">API</a>
+          <a className="py-3 px-2 text-gray-500 hover:text-white" href="#">Wiki</a>
         </nav>
         <div className="flex-1 text-right">
           <span className="text-xs text-gray-500">version 3.0</span>
@@ -52,8 +52,37 @@ export default function Home() {
             <span className="text-lg">$2109.83</span>
           </div>
 
-          <button className="rounded-full border-2 border-primary px-10 whitespace-nowrap hover:bg-primary focus:outline-none">Create bot</button>
+          {/*<button className="rounded-full border-2 border-primary px-10 whitespace-nowrap hover:bg-primary focus:outline-none">Create bot</button>*/}
 
+        </div>
+
+        <div className="bg-gray-400 dark:bg-white bg-opacity-5 px-20 py-10 rounded-t-3xl">
+          <div className="grid grid-cols-9 px-5 py-5 text-sm text-gray-400">
+            <div>Name</div>
+            <div>Exchange</div>
+            <div>Pair</div>
+            <div>24h</div>
+            <div>30d</div>
+            <div>All time</div>
+            <div>Running</div>
+            <div>Status</div>
+          </div>
+          <div className="grid grid-cols-9 px-5 py-5 text-sm dark:text-white border-t border-white border-opacity-10 hover:bg-white hover:bg-opacity-10 cursor-pointer">
+            <div>ADA Beast</div>
+            <div>Binance</div>
+            <div>ADA/USDT</div>
+            <div className="text-green-500">+1.5%</div>
+            <div className="text-green-500">+13.6%</div>
+            <div className="text-green-500">+74.8%</div>
+            <div>45d 12h 25m</div>
+            <div>Position <span className="text-green-500">(+0.354%)</span></div>
+            <div className="relative">
+              <div className="absolute -top-1 flex space-x-2">
+                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:bg-primary focus:outline-none">Edit</button>
+                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:bg-primary focus:outline-none">Logs</button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
