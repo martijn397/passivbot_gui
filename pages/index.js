@@ -67,7 +67,7 @@ export default function Home() {
             <div>Running</div>
             <div>Status</div>
           </div>
-          <div className="grid grid-cols-9 px-5 py-5 text-sm dark:text-white border-t border-white border-opacity-10 hover:bg-white hover:bg-opacity-10 cursor-pointer">
+          <div className="grid grid-cols-9 px-5 py-5 text-sm dark:text-white border-t border-gray-300 dark:border-white dark:border-opacity-10 hover:bg-white hover:bg-opacity-20 dark:hover:bg-opacity-10 cursor-pointer">
             <div>ADA Beast</div>
             <div>Binance</div>
             <div>ADA/USDT</div>
@@ -78,8 +78,8 @@ export default function Home() {
             <div>Position <span className="text-green-500">(+0.354%)</span></div>
             <div className="relative">
               <div className="absolute -top-1 flex space-x-2">
-                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:bg-primary focus:outline-none">Edit</button>
-                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:bg-primary focus:outline-none">Logs</button>
+                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:text-white hover:bg-primary focus:outline-none">Edit</button>
+                <button className="rounded-full border-2 border-primary px-4 py-1 text-xs whitespace-nowrap hover:text-white hover:bg-primary focus:outline-none">Logs</button>
               </div>
             </div>
           </div>
